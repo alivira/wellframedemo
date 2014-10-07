@@ -13,13 +13,13 @@ Manual fetching of adhoc aggregate information
 
 
 1. Care Managers
-a) Create patients
-b) View patient list and patient specific information
-c) View other care managers within the hospital and their patients
+- Create patients
+- View patient list and patient specific information
+- View other care managers within the hospital and their patients
 2. Administrator
-a) View all care managers and their patients
-b) Create other administrators
-c) Create and destroy care managers
+- View all care managers and their patients
+- Create other administrators
+- Create and destroy care managers
 
 User Requirements
 The feature must:

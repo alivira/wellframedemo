@@ -23,8 +23,7 @@ Administrators
 - Create other administrators
 - Create and destroy care managers
 
-User Requirements
-The feature must:
+User Requirements (the feature must:)
 1. Be centralized. All users should use the same platform
 2. Eliminate use of manual Rails scripting to create codes, access code data, and track code use
 3. Be aesthetically appealing, intuitive, and user friendly – accessible to all age and education demographics 
@@ -35,6 +34,7 @@ The feature must:
 
 
 API
+
 /activatePatient/:vcode
 - Changes the activate flag of a patient to ‘true’
 /isValid/:vcode

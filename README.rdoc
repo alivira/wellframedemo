@@ -9,16 +9,16 @@ The Problem
 - Verification codes are all created and distributed manually
 - Unable to automatically track whether a code has been used
 - Manual fetching of verification code details in the event of a bug
-Manual fetching of adhoc aggregate information
+- Manual fetching of adhoc aggregate information
 
 
-** Care Managers**
+Care Managers
 - Create patients
 - View patient list and patient specific information
 - View other care managers within the hospital and their patients
 
 
-** Administrator**
+Administrators
 - View all care managers and their patients
 - Create other administrators
 - Create and destroy care managers

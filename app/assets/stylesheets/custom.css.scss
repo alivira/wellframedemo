@@ -1,0 +1,142 @@
+/* mixins, variables, etc. */
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+
+a:hover {
+  background-color: transparent !important;
+  color: #c9c9c9 !important;
+}
+
+
+body {
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.navbar-nav > li > a
+{
+  color: #FFF !important;
+  font-size: 13pt;
+    height: 100% !important;
+
+}
+
+th
+{
+  text-align: center !important;
+}
+
+.btn-primary {
+  color: #FFF !important;       
+  background-color: #FF6400 !important;
+  border-color: #FF9D5C !important;
+}
+
+.btn-primary:hover{
+  color: #FFF !important;
+  background-color: #FF9D5C !important;
+}
+
+.btn-back {
+  color: #FFF !important;
+  background-color: #839496 !important;
+  border-color: #c9c9c9 !important;
+}
+
+.btn-back:hover{
+
+  color: #FFF !important;
+  background-color: #c9c9c9 !important;
+}
+
+
+.style_image
+{
+  height: 50px;
+  padding-left: 25px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+
+  a {
+
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}

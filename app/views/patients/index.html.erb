@@ -1,0 +1,35 @@
+<h1>All Patients</h1>
+
+
+
+<table>
+
+
+  <tr>
+    <tH>Care Manager</th>
+    <th>Id</th>
+    <th>Vcode</th>
+    <th>Active</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @patients.each do |patient| %>
+
+
+  <tr>
+    <td><%= patient.care_manager.name %></td>
+    <td><%= patient.patientID %></td>
+    <td><%= patient.vcode %></td>
+    <td><%= patient.active %></td>
+    <td><%= link_to 'Show', patient %></td>
+    <td><%= link_to 'Edit', edit_patient_path(patient) %></td>
+    <td><%= link_to 'Destroy', patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Patient', new_patient_path, :class => "btn btn-primary"  %>

@@ -1,0 +1,37 @@
+<h1>Care Managers for <%= current_user.hospital.name %></h1>
+
+
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @caremanagers.each do |caremanager| %>
+
+
+  <tr>
+    <td><%= caremanager.name %></td>
+    <td><%= caremanager.email %></td>
+    <td><%= link_to 'Show', caremanager %></td>
+    <% if current_user.admin %>
+    <td><%= link_to 'Edit', edit_care_manager_path(caremanager) %></td>
+    <td><%= link_to 'Destroy', caremanager, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'View Patients', care_manager_path(caremanager)+"/cmPatients" %></td>
+        <% if not caremanager.admin%>
+    <td><%= link_to 'Make Admin', care_manager_path(caremanager)+"/makeAdmin", data: {confirm: 'Are you sure?'}%></td>
+    <% end %>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% if current_user.admin %>
+<%= link_to 'New Care Manager', new_care_manager_path, :class => "btn btn-primary" %>
+<% end %>

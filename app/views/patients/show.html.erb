@@ -1,0 +1,19 @@
+
+<p>
+  <b>Id:</b>
+  <%= @patient.patientID %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @patient.active %>
+</p>
+
+<p>
+  <b>Vcode:</b>
+  <%= @patient.vcode %>
+</p>
+ 
+
+<%= link_to 'Edit', edit_patient_path(@patient) %> |
+<%= link_to 'Back', current_user %>

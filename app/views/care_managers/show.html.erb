@@ -1,0 +1,17 @@
+<h1>Profile</h1>
+
+<p>
+  <b>Name:</b>
+  <%= @caremanager.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @caremanager.email %>
+</p>
+
+ 
+
+<%= link_to 'Edit', edit_care_manager_path(@caremanager) %> |
+<%= link_to 'Back', care_managers_path %> | 
+<%= link_to 'View Patients', care_manager_path(@caremanager)+"/cmPatients" %>
